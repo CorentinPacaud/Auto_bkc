@@ -1,0 +1,18 @@
+/*********************************************************** */
+/**                    PARTICIPANTS                           */
+/*********************************************************** */
+
+namespace org.corentin.autobkc.participant
+
+abstract participant Owner identified by ownerId {
+  o String ownerId
+}
+
+participant Seller extends Owner{
+  o String name
+}
+
+participant Buyer extends Owner {
+  o String firstname
+  o String lastname
+}
